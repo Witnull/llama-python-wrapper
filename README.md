@@ -1,7 +1,7 @@
 # llama-python-wrapper
 This is my crude wrapper for ease of using concurrent session of llama-cpp - just for fast testing/implemeting projects. May not be good for production.
 
-A high-performance Python pipeline and drop-in `python-llama-cpp` replacement powered by a background-managed native `llama-server` engine.
+A medium-performance Python pipeline and drop-in `python-llama-cpp` replacement powered by a background-managed native `llama-server` engine.
 
 ## Key Features
 
