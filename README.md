@@ -5,7 +5,7 @@ A high-performance Python pipeline and drop-in `python-llama-cpp` replacement po
 
 ## Key Features
 
-- **100% Leak-Proof VRAM Lifecycle**: Replaces in-process C-bindings with a supervised native `llama-server.exe` subprocess. GPU VRAM is completely and immediately reclaimed by the OS kernel upon exit/unload.
+- **90% Leak-Proof VRAM Lifecycle**: - yes it may leak sometimes (WIP) - Replaces in-process C-bindings with a supervised native `llama-server.exe` subprocess. GPU VRAM is completely and immediately reclaimed by the OS kernel upon exit/unload.
 - **Dynamic Auto-Concurrency**: Automatically measures free VRAM via `nvidia-smi` and sizes continuous batching slots (`-np`) to safely maximize throughput without OOM errors.
 - **Drop-in `python-llama-cpp` Compatibility**: Full API compatibility (`Llama`, `LlamaGrammar`, `create_chat_completion`, `create_completion`, `create_embedding`). Existing projects can swap imports without code modifications.
 - **Single & Multi-Session Pipelines**:
